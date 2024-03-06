@@ -128,6 +128,7 @@ nav ul li{
    cursor: pointer;
    position: relative;
    z-index: 2;
+   transition: 0.2s;
 }
 
 nav ul li::after{
@@ -142,6 +143,13 @@ nav ul li::after{
    left:50%;
    transform: translate(-50%, -50%);
    z-index: -1;
+   opacity: 0;
+}
+
+nav ul li::hover{
+   
+   color: #fff;
+
 }
 
 </style>
