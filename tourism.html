@@ -34,6 +34,24 @@
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
+.scroll-animation {
+ 
+      animation: scrollfade linear both;
+      animation-timeline: view() ;
+      animation-range:  50% cover 50%;
+
+}
+
+@keyframes scrollfade{
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity 1
+ }
+}
+
+
 
 
 .h1{
@@ -274,6 +292,7 @@ p {
 
 <body>
 
+<div class="scroll-animation ">
 
 <header1>
 
@@ -490,3 +509,4 @@ p {
 </div>
 </div>
 
+</div>
