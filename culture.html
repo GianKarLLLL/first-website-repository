@@ -13,6 +13,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -33,7 +35,6 @@
 img {vertical-align: middle;}
 
 
-
 .h1{
 
      font-family: "Madimi One",        sans-serif;
@@ -44,8 +45,19 @@ img {vertical-align: middle;}
 
      font-family: "Anton", sans-serif;
      font-weight: 700;
+     font-size: 18px;
 
 }
+
+.category {
+
+     font-family: "Arvo", serif;
+     font-color: white;
+     font-size: 30px;
+     font-weight: 900;
+
+}
+
 vertical {
 
       postion: absolute;
@@ -112,7 +124,7 @@ img {
 
 .container {
    background: #151B54;
-   width: 100%
+   max-width: 100%
    height: 100vh;
    display: flex;
    align-items: center;
@@ -127,6 +139,19 @@ nav {
    box-shadow: 0 25px 20px -20px rgba(0, 0,0,0.4);
    opacity: 1;
 }
+
+.navv {
+   background: #fff;
+   border-radius:50px;
+   padding: 300px;
+   max-width: 100%; 
+   box-shadow: 0 25px 20px -20px rgba(0, 0,0,0.4);
+   background-color: rgba(255,255,255,.5);
+   color: #fff;
+
+}
+
+
 
 nav ul li{
 
@@ -176,20 +201,34 @@ nav ul li:hover::after{
 .slideshow-container {
   position: absolute;
   display: block;
-  left: 3%;
-  margin: auto;
+  left: 12%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: auto;
+  transition: 1s;
 
 }
 
+.slideshow-container:hover {
+
+  transform:scale(0.9);
+  z-index: 2;
+
+}
+
+
+
 .text-slide {
 
-  font-size: 15px;
+  font-size: 40px;
   padding-left: 20px;
 
 
+p {
+
+  font-size: 23px;
+  font-family: "Lato", sans-serif;
 }
 
 .dot {
@@ -227,16 +266,6 @@ nav ul li:hover::after{
    margin: auto;
 }
 
-p {
-
-   margin: 5px;
-   font-size: 15px;
-   color: white;
-   position: relative;
-   font-family: "Lato", sans-serif;
-   font-weight: 500;
-
-}
 
 
 </style>
@@ -269,3 +298,193 @@ p {
       </nav>
   </div>
 <hr color="#151B54" style="width:100%;height:10px;">
+
+<br>
+<br>
+<div class="category">
+<font color="white">
+<center><h1>TOURISM</h1></center>
+</font>
+</div>
+<br>
+
+
+
+<div class="slideshow-container">
+<img src="boracay.jpg" style="height:360px;width:550px;border-radius:20px;">
+
+<div class="text-slide">
+<font color="white">
+
+<div class="h1-heading">
+<h1>Boracay Beach</h1>
+</div>
+
+<br>
+<p>Boracay is a renowned tropical paradise in the Philippines, known for its powdery white sand, crystal-clear turquoise waters, and vibrant nightlife. The island offers a perfect blend of relaxation and excitement, with various water sports, beachfront bars, and stunning sunsets.</p>
+<br>
+
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="slideshow-container">
+<img src="Siargao.jpeg" style="height:360px;width:550px;border-radius:20px;">
+<div class="text-slide">
+<font color="white">
+
+<div class="h1-heading">
+<h1>Siargao Island</h1>
+</div>
+
+<br>
+<p>Siargao, located in the Philippines, is a captivating island known for its laid-back atmosphere, world-class surfing spots like Cloud 9, and lush landscapes. With pristine beaches, hidden lagoons, and a thriving surf culture, Siargao attracts nature lovers and adventure seekers alike.</p>
+<br>
+
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="slideshow-container">
+<img src="PPUR.jpeg" style="height:360px;width:550px;border-radius:20px;">
+<div class="text-slide">
+<font color="white">
+
+<div class="h1-heading">
+<h1>Puerto Princesa Underground River</h1>
+</div>
+
+<br>
+<p>The Puerto Princesa Underground River in Palawan, Philippines, is a UNESCO World Heritage Site and one of the New Seven Wonders of Nature. This subterranean river, navigable by boat, winds through awe-inspiring limestone caverns, showcasing impressive stalactite and stalagmite formations. The river is surrounded by lush forests and diverse wildlife, adding to its ecological significance and natural beauty.</p>
+<br>
+
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="slideshow-container">
+<img src="BGC.jpeg" style="height:360px;width:550px;border-radius:20px;">
+<div class="text-slide">
+<font color="white">
+
+<div class="h1-heading">
+<h1>BGC (Bonifacio Global City)</h1>
+</div>
+
+<br>
+<p>Bonifacio Global City (BGC) is a modern and dynamic financial and lifestyle district in Metro Manila, Philippines. Renowned for its sleek skyscrapers, upscale shopping centers, and vibrant nightlife, BGC offers a cosmopolitan atmosphere. The area also features green spaces, art installations, and a range of dining options, making it a hub for business, leisure, and cultural activities.</p>
+<br>
+
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="slideshow-container">
+<img src="Burnharm_Park_Baguio_City.jpg" style="height:360px;width:550px;border-radius:20px;">
+<div class="text-slide">
+<font color="white">
+
+<div class="h1-heading">
+<h1>Burnharm Park</h1>
+</div>
+
+<br>
+<p>Burnham Park is a picturesque urban oasis situated in the heart of Baguio City, Philippines. This iconic park is characterized by a large central lagoon where visitors can enjoy boat rides, surrounded by vibrant gardens and scenic walking paths. With features like a skating rink, playgrounds, and open spaces, Burnham Park serves as a popular recreational spot, offering a refreshing escape amidst the city's cool climate and pine tree-lined surroundings.</p>
+<br>
+
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="slideshow-container">
+<img src="Chocolate_Hills_in_Bohol.jpg" style="height:360px;width:550px;border-radius:20px;">
+<div class="text-slide">
+<font color="white">
+
+<div class="h1-heading">
+<h1>Chocolate Hills</h1>
+</div>
+
+<br>
+<p>The Chocolate Hills are a natural wonder located in Bohol, Philippines. This unique geological formation consists of over a thousand perfectly cone-shaped hills that turn chocolate brown during the dry season, resembling a sea of chocolate kisses. These hills, covered in green grass, create a mesmerizing and surreal landscape. The origin of the Chocolate Hills is a geological mystery, adding to the allure of this iconic destination.</p>
+<br>
+
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="slideshow-container">
+<img src="Mayon_Volcano_in_Albay.jpg" style="height:360px;width:550px;border-radius:20px;">
+<div class="text-slide">
+<font color="white">
+
+<div class="h1-heading">
+<h1>Mayon Volcano in Albay</h1>
+</div>
+
+<br>
+<p>Mayon Volcano, located in Albay, Philippines, is renowned for its near-perfect cone shape and majestic beauty. An active stratovolcano, Mayon is set against a backdrop of lush landscapes and picturesque surroundings. Despite occasional volcanic activity, its symmetrical silhouette makes it a popular tourist attraction, offering breathtaking views from various vantage points. The volcano is steeped in local folklore and is a prominent natural landmark in the region.</p>
+<br>
+
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="slideshow-container">
+<img src="Banaue_Rice_Terraces.jpg" style="height:360px;width:550px;border-radius:20px;">
+<div class="text-slide">
+<font color="white">
+
+<div class="h1-heading">
+<h1>Banaue Rice Terraces</h1>
+</div>
+
+<br>
+<p>The Banaue Rice Terraces, often dubbed the "Eighth Wonder of the World," are an ancient marvel situated in the mountainous province of Ifugao, Philippines. Carved into the steep slopes by Ifugao tribes over 2,000 years ago, these terraces showcase an intricate irrigation system that still functions today. The lush, green steps create a breathtaking landscape, emphasizing the ingenuity of ancient agricultural practices and cultural heritage.</p>
+<br>
+
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="slideshow-container">
+<img src="Vigan.jpeg" style="height:360px;width:550px;border-radius:20px;">
+<div class="text-slide">
+<font color="white">
+
+<div class="h1-heading">
+<h1>The Heritge City of Vigan</h1>
+</div>
+
+<br>
+<p>Vigan, a UNESCO World Heritage City in the Philippines, is a captivating blend of Spanish colonial architecture and Filipino heritage. Known for its well-preserved cobblestone streets, ancestral houses, and iconic Calle Crisologo, Vigan transports visitors back in time to the Spanish colonial era. The city reflects a unique fusion of Asian design and European aesthetics, making it a cultural gem with a rich history and a vibrant atmosphere.</p>
+<br>
+
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="slideshow-container">
+<img src="Kawawan_Falls_Cebu.jpg" style="height:360px;width:550px;border-radius:20px;">
+<div class="text-slide">
+<font color="white">
+
+<div class="h1-heading">
+<h1>Kawawan Falls</h1>
+</div>
+
+<br>
+<p>Kawasan Falls is a breathtaking natural attraction in Badian, Cebu, Philippines. Nestled within a lush tropical forest, this multi-tiered waterfall system is renowned for its turquoise-blue waters and serene surroundings. Visitors can enjoy swimming in the cool natural pools, take bamboo raft rides, and revel in the scenic beauty of the cascading waterfalls. Kawasan Falls is not only a popular spot for relaxation but also an adventure destination with opportunities for canyoneering and trekking.</p>
+<br>
+
+</div>
+</div>
