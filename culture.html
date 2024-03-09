@@ -217,6 +217,25 @@ nav ul li:hover::after{
 
 }
 
+.slideshow-container-piechart {
+  position: absolute;
+  display: block;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  transition: 1s;
+
+}
+
+.slideshow-container-piechart:hover {
+
+  transform:scale(0.9);
+  z-index: 2;
+
+}
+
 
 
 .text-slide {
@@ -504,7 +523,7 @@ p {
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<div class="slideshow-container">
+<div class="slideshow-container-piechart">
 <img src="piechart.jpg" style="height:460px;width:750px;border-radius:20px;">
 <div class="text-slide">
 <font color="white">
