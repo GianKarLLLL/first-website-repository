@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en"
+      class="auto-mode theme-all">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+  <meta name="description" content="A friendly art community, by the people who created Sony Sketch" />
+
+  <!-- Apple PWA -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="SketchersU">
+
+  <!-- PWA Assets -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://sketchersunited.org/pwa/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://sketchersunited.org/pwa/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://sketchersunited.org/pwa/favicon-16x16.png">
+  <link rel="manifest" href="https://sketchersunited.org/pwa/site.webmanifest">
+  <link rel="mask-icon" href="https://sketchersunited.org/pwa/safari-pinned-tab.svg" color="#333333">
+  <link rel="shortcut icon" href="https://sketchersunited.org/pwa/favicon.ico">
+  <meta name="msapplication-TileColor" content="#333333">
+  <meta name="msapplication-TileImage" content="https://sketchersunited.org/pwa/mstile-144x144.png">
+  <meta name="msapplication-config" content="https://sketchersunited.org/pwa/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- iPhone 5, SE (640px x 1136px) @x2 -->
+  <link href="https://sketchersunited.org/pwa/splash/light/apple-splash-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="https://sketchersunited.org/pwa/splash/dark/apple-splash-640x1136.png" media="(prefers-color-scheme: dark) and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <!-- iPhone 8, 7, 6s, 6 (750px x 1334px) @x2 -->
+  <link href="https://sketchersunited.org/pwa/splash/light/apple-splash-750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="https://sketchersunited.org/pwa/splash/dark/apple-splash-750x1334.png" media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) @x3 -->
+  <link href="https://sketchersunited.org/pwa/splash/light/apple-splash-1242x2208.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="https://sketchersunited.org/pwa/splash/dark/apple-splash-1242x2208.png" media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <!-- iPhone 11 Pro, X, Xs (1125px x 2436px) @x3 -->
+  <link href="https://sketchersunited.org/pwa/splash/light/apple-splash-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="https://sketchersunited.org/pwa/splash/dark/apple-splash-1125x2436.png" media="(prefers-color-scheme: dark) and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <!-- iPhone 11, Xr (828px x 1792px) @x2 -->
+  <link href="https://sketchersunited.org/pwa/splash/light/apple-splash-828x1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="https://sketchersunited.org/pwa/splash/dark/apple-splash-828x1792.png" media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <!-- iPhone 11 Pro Max, Xs Max (1242px x 2688px) @x3 -->
+  <link href="https://sketchersunited.org/pwa/splash/light/apple-splash-1242x2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="https://sketchersunited.org/pwa/splash/dark/apple-splash-1242x2688.png" media="(prefers-color-scheme: dark) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <!-- iPad Mini, Air (1536px x 2048px) @x2 -->
+  <link href="https://sketchersunited.org/pwa/splash/light/apple-splash-1536x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="https://sketchersunited.org/pwa/splash/dark/apple-splash-1536x2048.png" media="(prefers-color-scheme: dark) and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <!-- iPad Pro 10.5" (1668px x 2224px) @x2 -->
+  <link href="https://sketchersunited.org/pwa/splash/light/apple-splash-1668x2224.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="https://sketchersunited.org/pwa/splash/dark/apple-splash-1668x2224.png" media="(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <!-- iPad Pro 11" (1668px x 2388px) @x2 -->
+  <link href="https://sketchersunited.org/pwa/splash/light/apple-splash-1668x2388.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="https://sketchersunited.org/pwa/splash/dark/apple-splash-1668x2388.png" media="(prefers-color-scheme: dark) and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <!-- iPad Pro 12.9" (2048px x 2732px) @x2 -->
+  <link href="https://sketchersunited.org/pwa/splash/light/apple-splash-2048x2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="https://sketchersunited.org/pwa/splash/dark/apple-splash-2048x2732.png" media="(prefers-color-scheme: dark) and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="di8XcYmR7o4WcDsO4leihjKvkCUKLX740Cicgz7L">
+
+  <title> Sketchers United</title>
+
+  <!-- Styles -->
+  <link href="/css/app.css?id=a9ebce0f0a63bd2d5be2b1467b02c4cc" rel="stylesheet">
+
+  
+</head>
+<body ontouchstart="">
+
+  <div id="app" class="app-wrapper">
+
+    <navbar-component route="https://sketchersunited.org/redirect"></navbar-component>
+    
+
+
+
+    <div class="d-flex h-100 overflow-auto bg-secondary">
+
+      
+      <main>
+          
+<div class="">
+
+    <div class="animations-on-top">
+
+        
+        
+        <section id="vue-container" class="section-profile-grid">
+            <div class="container-fluid">
+                                    <div class="row">
+                        <div class="col-12 d-flex justify-content-between align-items-center p-3 p-sm-4">
+                            <h3 class="mb-0">#philippines</h3>
+                            <span>124 sketches</span>
+                        </div>
+                    </div>
+                                                                    <gallery-component path="https://sketchersunited.org/json/tags/philippines" username="show" sensitive="on"></gallery-component>
+                            </div>
+        </section>
+
+    </div>
+
+</div>
+
+      </main>
+
+    </div>
+
+        
+  </div>
+
+  <script>
+      function hasSideBarNav() {
+          const navMenu = document.getElementById('side-bar-nav');
+          return (navMenu && window.getComputedStyle(navMenu).display === 'block');
+      }
+
+      // Fixes the layout for expanded side bar
+      if (hasSideBarNav() && JSON.parse(localStorage.getItem('side-bar-opened'))) {
+          document.getElementById('app').classList.add('side-bar-opened');
+          document.getElementById('sideBar').classList.add('expanded');
+      }
+
+      // Fixes the layout for collapsed side bar
+      const sideBar = document.querySelector('#sideBar');
+      if (sideBar) {
+          document.getElementById('app').classList.toggle('side-bar-shown');
+      }
+  </script>
+
+  <div class="loading-overlay">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <svg class="icon" width="80px" height="80px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ellipsis" style="background: none;">
+    <circle cx="84" cy="50" r="0" fill="#ffa619">
+        <animate attributeName="r" values="10;0;0;0;0" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1.9s" repeatCount="indefinite" begin="0s"></animate>
+        <animate attributeName="cx" values="84;84;84;84;84" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1.9s" repeatCount="indefinite" begin="0s"></animate>
+    </circle>
+    <circle cx="34.595" cy="50" r="10" fill="#89d842">
+        <animate attributeName="r" values="0;10;10;10;0" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1.9s" repeatCount="indefinite" begin="-0.95s"></animate>
+        <animate attributeName="cx" values="16;16;50;84;84" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1.9s" repeatCount="indefinite" begin="-0.95s"></animate>
+    </circle>
+    <circle cx="16" cy="50" r="5.46911" fill="#35C2F9">
+        <animate attributeName="r" values="0;10;10;10;0" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1.9s" repeatCount="indefinite" begin="-0.475s"></animate>
+        <animate attributeName="cx" values="16;16;50;84;84" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1.9s" repeatCount="indefinite" begin="-0.475s"></animate>
+    </circle>
+    <circle cx="84" cy="50" r="4.53088" fill="#FF68CF">
+        <animate attributeName="r" values="0;10;10;10;0" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1.9s" repeatCount="indefinite" begin="0s"></animate>
+        <animate attributeName="cx" values="16;16;50;84;84" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1.9s" repeatCount="indefinite" begin="0s"></animate>
+    </circle>
+    <circle cx="68.595" cy="50" r="10" fill="#ffa619">
+        <animate attributeName="r" values="0;0;10;10;10" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1.9s" repeatCount="indefinite" begin="0s"></animate>
+        <animate attributeName="cx" values="16;16;16;50;84" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1.9s" repeatCount="indefinite" begin="0s"></animate>
+    </circle>
+</svg>    </div>
+  </div>
+
+      
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <script type="text/javascript" src="/js/app.js?id=fc87957be7bcc7a6a97ea1ff8d7e80a3" defer></script>
+  <script type="text/javascript" src="/js/all.js?id=e711fdc619c1fce084365f680cb7fc45" defer></script>
+  
+  
+  </body>
+</html>
