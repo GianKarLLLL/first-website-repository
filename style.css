@@ -48,9 +48,9 @@
     }
 
     .title {
-      font-size: clamp(24px, 5vw, 40px);
+      font-size: clamp(24px, 5vw, 35px);
       font-weight: 900;
-      letter-spacing: -3.5px;
+      letter-spacing: -1.5px;
       text-align: center;
       flex-grow: 1;
       margin-left: 35px; /* slight shift to center visually */
