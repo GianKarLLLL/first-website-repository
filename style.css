@@ -925,6 +925,20 @@
         filter: drop-shadow(0 0 15px rgb(112, 103, 103));
     }
 
-    
+}
 
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: rgb(192, 187, 187);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: clamp(9px, 1.2vw, 13px); /* Responsive font size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
 }
