@@ -812,24 +812,24 @@
     }
     }
 
-    .reward-text {
+.reward-text {
     position: absolute;
     top: -120px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-size: 1.6rem;
+    font-size: clamp(1rem, 2.5vw, 1.6rem); /* responsive font size */
     background: rgba(0, 0, 0, 0.5);
     padding: 6px 12px;
     border-radius: 8px;
     text-align: center;
     opacity: 0;
     pointer-events: none;
-    white-space: nowrap; /* Keeps text on one line */
-    width: auto; /* Allows it to auto-expand */
-    max-width: 90vw; /* Optional: prevent it from going off-screen */
+    white-space: nowrap;
+    width: auto;
+    max-width: 90vw;
     font-family: "OmoriFont";
-    }
+}
 
     .box-body.clicked .reward-text {
     animation: rewardTextFadeUp 0.8s ease forwards;
