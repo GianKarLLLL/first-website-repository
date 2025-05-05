@@ -450,18 +450,20 @@
     }
 
     .prompt-container {
-      position: absolute;
+      position: relative;
       top: 30%;
       left: 50%;
       transform: translate(-50%, -50%);
       background: rgba(0, 0, 0, 0.6);
-      padding: 20px 30px;
-      border-radius: 12px;
+      padding: clamp(12px, 4vw, 20px) clamp(16px, 5vw, 30px);
+      border-radius: clamp(4px, 2vw, 12px);
       color: white;
       z-index: 2;
       text-align: center;
       font-family: 'OmoriFont';
-      font-size: 40px;
+      font-size: clamp(24px, 4vw, 40px);
+      width: clamp(300px, 60vw, 469px);
+      max-width: 90vw;
     }
 
     .prompt-container button {
